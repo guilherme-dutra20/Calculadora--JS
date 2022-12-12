@@ -1,0 +1,66 @@
+/*definições univaersais*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+   /*preenchendo 1005 do espaço da tela*/
+    height: 100vh;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("https://img.freepik.com/fotos-premium/formulas-matematicas-brilhantes-no-papel-de-parede-azul-conhecimento-em-educacao-e-conceito-de-estatistica-3d-rendering_670147-7438.jpg?w=2000");
+}
+
+.calculadora{
+    /*sobrepondo a div por cima da outra */
+    position: absolute;
+    
+    background-color: black;
+    /* top e left definindo a distancia das divs das bordas da tela*/
+    top: 50%;
+    left: 50%;
+    /* definindo a posição das bordas do lado direito e debaixo, acompanhando o top e left*/
+    transform: translate(-50%,-50%);
+
+    border-radius: 15px;
+    /*definindo a distancia das divs pras bordas da tela de maneira geral */
+    padding: 15px;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    /* mostrando a mãozinha do mouse quando passa em cima dos numeros*/
+    cursor: pointer;
+
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botao:hover{
+    /* altera a cor do botão quando passa o mouse*/
+    background-color: black;
+}
+
+#resultado{
+    width: 207px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+#resultado:hover{
+    background-color: rgb(149, 149, 247);
+}
+h1{
+    color: black;
+}
